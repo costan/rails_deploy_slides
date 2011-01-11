@@ -1,8 +1,71 @@
 PROVISION
 
-1.
+1. Set up SSH keys for GitHub
+$ sudo ssh-keygen
+> Press Enter for all prompts
+> See where public key was generated
+$ cat /root/.ssh/id_rsa.pub
+> Setup key as deployment key on GitHub
+
+2. Checkout app
+$ cd /var/www
+$ sudo mkdir gitty
+$ sudo chown pwnall:pwnall gitty
+$ git clone git@github.com:pwnall/gitty.git
+$ cd gitty
+$ git checkout prod
+
+3. Install dependencies
+$ bundle install
+
+4. Make database
+$ mysql -uroot
+mysql> CREATE DATABASE gitty_prod;
+mysql> exit
+
+5. Wire app to database
+$ nano config/database.yml
+> Put the following in the production section
+production:
+  adapter: mysql2
+  database: gitty_prod
+  username: root
+  password:
+> Save and exit: Ctrl+O, Enter, Ctrl+X
+
+6. Load database schema
+$ rake db:migrate RAILS_ENV=production
+
+7. Do any application-specific setup
+> Usually in README or doc/README
+
+8. Wire application to Apache (follow instructions from passenger script)
+$ sudo nano /etc/apache2/sites-enabled/gitty
+> Put the following configuration in the file.
+<VirtualHost *:80>
+  ServerName www.yourhost.com
+  DocumentRoot /var/www/gitty/public
+  <Directory /var/www/gitty/public>
+     AllowOverride all
+     Options -MultiViews
+  </Directory>
+</VirtualHost>
+
+9. Check the site
+> http://localhost:2080/
 
 
 PUSH
 
-1.
+1. Bring down app server
+TODO
+
+2. Update software
+$ cd /var/www/gitty
+$ git pull
+
+3. Update database
+$ rake db:migrate RAILS_ENV=production
+
+4. Bring up app server
+TODO
