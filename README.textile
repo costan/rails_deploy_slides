@@ -1,6 +1,6 @@
-h1. Security in Web Applications Slides
+h1. Server Admin and Deployment Slides
 
-This is the source code for a slide deck used in a 2-hour presentation on Ruby on Rails. The presentation includes an introduction to the Ruby programming language.
+This is the source code for a slide deck used in a 1-hour presentation on Ruby on Rails application deployment.
 
 h2. Build Instructions
 
