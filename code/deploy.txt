@@ -1,10 +1,10 @@
 PROVISION
 
 1. Set up SSH keys for GitHub
-$ sudo ssh-keygen
+$ ssh-keygen
 > Press Enter for all prompts
 > See where public key was generated
-$ cat /root/.ssh/id_rsa.pub
+$ cat ~/.ssh/id_rsa.pub
 > Setup key as deployment key on GitHub
 
 2. Checkout app
@@ -51,7 +51,10 @@ $ sudo nano /etc/apache2/sites-enabled/gitty
   </Directory>
 </VirtualHost>
 
-9. Check the site
+9. Reload Apache's configuration.
+$ sudo /etc/init.d/apache2 reload
+
+10. Check the site
 > http://localhost:2080/
 
 

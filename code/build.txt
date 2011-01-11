@@ -100,6 +100,8 @@ $ apt-get install openssh-server
 
 COMMON SETUP
 
+NOTE: sudo is not necessary on xvm.mit.edu. Commands will still work though.
+
 1. Install Git
 $ sudo apt-get install git-core
 
