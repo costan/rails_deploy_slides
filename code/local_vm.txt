@@ -1,0 +1,58 @@
+1. Get VirtualBox
+1a. On Windows or OSX: http://www.virtualbox.org/wiki/Downloads
+1b. On Ubuntu: sudo apt-get install virtualbox-ose 
+
+2. Get Ubuntu Server: http://www.ubuntu.com/server/get-ubuntu/download
+> 64-bit edition (recommended)
+
+3. Start VirtualBox and create a new VM.
+> Name: Web server
+> OS: Linux
+> Version: Ubuntu (32 bit)
+> Memory size: 384Mb
+> Boot hard disk: yes
+> Create new Hard Disk
+  > Storage type: Dynamically expanding storage
+  > Size: 5.00 Gb
+
+4. Start the VM.
+> Go through first run wizard.
+> Select installation media.
+> Media source: downloaded Ubuntu ISO
+> Click through until it boots.
+
+5. Install Ubuntu.
+> Language: English
+> Boot menu: Install Ubuntu Server
+> Language: English
+> Territory: United States
+> Detect keyboard layout: no
+> Origin of keyboard: USA
+> Keyboard layout: USA
+> Hostname: railsvm
+> Timezone: yes (it is correct)
+> Partitioning: Guided - use entire disk
+> Disk to partition: the only choice
+> Partition disks: yes (confirm)
+> User full name: Victor Costan
+> Username: pwnall
+> Password: (something secret)
+> Encrypt home directory: no
+> HTTP proxy: leave blank
+> Upgrades: No automatic upgrades
+> Software to install: LAMP server, OpenSSH server
+> Password for MySQL "root" user: blank
+> Install GRUB loader to MBR: yes
+
+6. Click on CD, remove disk from virtual drive
+
+7. Click on Network adapters.
+> Adapter 1
+> Expand Advanced options
+> Click Port Forwarding
+> Rule 1: Host port 2022 -> Guest port 22
+> Rule 2: Host port 2080 -> Guest port 80
+
+8. Reboot server: Machine > Insert Ctrl+Alt+Del
+
+9. SSH into the VM: ssh -p 2022
