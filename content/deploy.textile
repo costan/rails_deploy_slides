@@ -1,2 +1,72 @@
 h1. Deploying Your App
 
+h1. Review: Branch Discipline
+
+There is no single solution. I like this one.
+
+Integration vs feature branches
+* Integration branches "collect" topic branches
+* No commits on integration branches
+* A feature branches off an integration branch
+* Feature branches are merged back into integration branches
+* No merging into integration branches
+
+h1. Review: Branch Discipline
+
+Two special integration branches for Web development.
+* @master@, a.k.a. _mainline_: all features are branched off and merged into it
+* @prod@  is what's running on production
+
+h1. Core Deployment Steps
+
+# *provision*: get your app running
+# *push*: update your app to a new version
+# *rollback*: revert a bad push
+
+h1. Core Deployment Steps
+
+# *provision*: get your app running
+# *push*: update your app to a new version
+# *rollback*: revert a bad push
+
+Same approach as for building VM 
+# Google step-by-step tutorials
+# Document every URL and every command
+# Write a script with the commands
+
+h1. Provision
+
+# Get source code
+# Set up database
+# Wire database to app
+# Wire app to load balancer
+
+h1. Push
+
+# Bring down app server
+# Update source code
+# Update database
+# Bring up app server
+
+h1. Rollback
+
+Won't really happen in 6.470.
+
+# Bring down app server
+# Fix database damage
+# Revert source code to known good version
+# Bring up app server
+# Press release (blog)
+
+h1. Advanced Deployment
+
+Do a cost-benefit analysis!
+
+# *backup*: "checkpoint" database and source code
+# *staging*: replica of production for testing
+# *monitoring*: automated notifications if server goes down
+
+h1. Demo
+
+Script at
+*{font-size: 3em; }http://bit.ly/123456*

@@ -49,6 +49,10 @@ h1. Setting Up a VM
 ## Document every URL and every command
 ## Bonus points: write a script with the commands
 
+h1. Maintaining a VM
+
+*{font-size: 4em; }Memorize the software update command*
+
 h1. Demo
 
 Script at
