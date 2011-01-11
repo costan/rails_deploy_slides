@@ -55,10 +55,14 @@ VIRTUALBOX ON LOCAL MACHINE
 > Rule 1: Host port 2022 -> Guest port 22
 > Rule 2: Host port 2080 -> Guest port 80
 
-8. Reboot server: Machine > Insert Ctrl+Alt+Del
+8. Reboot server
+> In VirtualBox, go to the Machine menu, then select Insert Ctrl+Alt+Del
 
-9. SSH into the VM: ssh -p 2022
+9. SSH into the VM
+$ ssh -p 2022 pwnall@localhost
 
+10. Shutdown VM
+$ sudo halt
 
 SERVER ON XVM.MIT.EDU
 
