@@ -56,4 +56,4 @@ h1. Maintaining a VM
 h1. Demo
 
 Script at
-*{font-size: 3em; }http://bit.ly/123456*
+*{font-size: 3em; }http://bit.ly/hI5lNU*
