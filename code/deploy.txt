@@ -61,7 +61,7 @@ $ sudo /etc/init.d/apache2 reload
 PUSH
 
 1. Bring down app server
-TODO
+Todo
 
 2. Update software
 $ cd /var/www/gitty
@@ -71,4 +71,4 @@ $ git pull
 $ rake db:migrate RAILS_ENV=production
 
 4. Bring up app server
-TODO
+Todo
