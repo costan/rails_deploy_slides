@@ -1,0 +1,55 @@
+h1. Building a Server
+
+h1. Why Virtual Machines
+
+# Sandbox for experiments
+** Clone server by copying 2 files
+# Replica of production
+** Best production environment is *not* best development environment
+# Share setups
+** Copy 2 files instead of long list of instructions
+
+h1. Virtual Machine Software
+
+Use to build a VM on your computer.
+# VirtualBox
+** Open source, for now
+** Free
+# VMWare
+** Fast
+** Free for MIT students
+
+h1. VM Hosting
+
+* "XVM at MIT":http://xvm.mit.edu
+** Free for students
+* "Amazon EC2":http://aws.amazon.com/ec2/
+** Free tiny instance
+* "Rackspace":http://www.rackspace.com/
+* "Linode":http://www.linode.com/
+* Lots more
+
+h1. Aside: App Hosting
+
+* White-glove version of VM hosting
+** Pros: less setup and maintainance
+** Cons: flexibility, pricing
+* Providers
+** "Google App Engine":http://code.google.com/appengine/ for all JVM languages
+** "Heroku":http://heroku.com for Ruby on Rails
+** "Engine Yard":http://www.engineyard.com/ for Ruby
+
+h1. Setting Up a VM
+
+# Figure out specs
+## List of software you need
+## Specs from hosting provider 
+# Trial and error
+## Google step-by-step tutorials
+## Document every URL and every command
+## Bonus points: write a script with the commands
+
+h1. Demo
+
+Script at
+*{font-size: 3em; }http://bit.ly/123456*

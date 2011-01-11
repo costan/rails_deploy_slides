@@ -1,3 +1,5 @@
+VIRTUALBOX ON LOCAL MACHINE
+
 1. Get VirtualBox
 1a. On Windows or OSX: http://www.virtualbox.org/wiki/Downloads
 1b. On Ubuntu: sudo apt-get install virtualbox-ose 
@@ -56,3 +58,37 @@
 8. Reboot server: Machine > Insert Ctrl+Alt+Del
 
 9. SSH into the VM: ssh -p 2022
+
+
+SERVER ON XVM.MIT.EDU
+
+1. Go to xvm.mit.edu
+
+2. Create a new VM.
+> Name: pwnall (for this example)
+> Memory: 384Mb
+> Disk: 5.0Gb
+> ParaVM
+> Autoinstall: Ubuntu 10.04 Lucid
+
+3. Wait for the installation to finish. It will finish when the VM powers off.
+
+4. Power on the VM.
+
+5. SSH into Athena: ssh costan@linux.mit.edu
+
+6. SSH into your VM: ssh pwnall@xvm-console.mit.edu
+> Username: root
+> Should not require password.
+
+7. Set a root password: passwd
+
+8. Get ssh: apt-get install openssh-server
+
+9. Log out of your VM and Athena.
+
+10. SSH straight into your VM: ssh root@pwnall.xvm.mit.edu
+
+
+COMMON SETUP
+

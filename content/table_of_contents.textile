@@ -5,6 +5,11 @@ h1. Review
 * "Server Review":server.html
 * "Internet Plumbing":network.html
 
+h1. Processes
+
+* "Building a Server":build.html
+* "Deploying your App":deploy.html
+
 h1. Wrap-Up
 
 * "Wrap-up":wrap_up.html
