@@ -134,3 +134,8 @@ PassengerRuby /usr/bin/ruby1.8
 
 8. Delete default Apache site
 $ sudo rm /etc/apache2/sites-enabled/*
+
+
+SOFTWARE UPDATE COMMAND
+
+$ sudo apt-get update; sudo apt-get upgrade

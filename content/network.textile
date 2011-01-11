@@ -8,18 +8,18 @@ h1. Moving Bits Across the Wire
 h1. Finding a Server
 
 # Find computer on the Internet
-** Each computer has an _IP address_ (phone number)
-** DNS (phonebook) translates names like _www.google.com_ to IP addresses like _74.125.226.148_
+** Each computer has an @IP address@ (phone number)
+** DNS (phonebook) translates names like @www.google.com@ to IP addresses like @74.125.226.148@
 # Find server program on computer
-** Each server gets a _port number_ (mailbox)
+** Each server gets a @port number@ (mailbox)
 ** Port numbers are standardized
-** _HTTP_ is 80, _SSH_ is 22
+** @HTTP@ is 80, @SSH@ is 22
 
 h1. Exchanging Bits
 
 * Two protocols (methods)
-## TCP is reliable but slow 
-## UDP is fast but unreliable (voice)
+## @TCP@ is reliable but slow 
+## @UDP@ is fast but unreliable (voice)
 * Moving bits isn't free
 ** Speed: xxMb/s
 ** Quantity: xxGb/month
