@@ -12,10 +12,10 @@ h1. Why Virtual Machines
 h1. Virtual Machine Software
 
 Use to build a VM on your computer.
-# VirtualBox
+# "VirtualBox":http://www.virtualbox.org/
 ** Open source, for now
 ** Free
-# VMWare
+# "VMWare":http://www.vmware.com/
 ** Fast
 ** Free for MIT students
 

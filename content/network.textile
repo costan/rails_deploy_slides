@@ -9,8 +9,7 @@ h1. Finding a Server
 
 # Find computer on the Internet
 ** Each computer has an _IP address_ (phone number)
-** DNS (phonebook) translates names like _www.google.com_ to IP addresses like
-_74.125.226.148_
+** DNS (phonebook) translates names like _www.google.com_ to IP addresses like _74.125.226.148_
 # Find server program on computer
 ** Each server gets a _port number_ (mailbox)
 ** Port numbers are standardized
